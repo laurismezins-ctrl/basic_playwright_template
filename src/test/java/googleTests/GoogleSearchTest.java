@@ -7,7 +7,7 @@ import org.my_playwright_template.pages.googlePages.GooglePage;
 
 public class GoogleSearchTest extends BaseTest {
     @Test
-    void titleTest() {
+    void titleTest() throws InterruptedException {
         GooglePage googlePage = new GooglePage(page);
         googlePage.openGoogle();
 
@@ -16,5 +16,8 @@ public class GoogleSearchTest extends BaseTest {
 
         Assertions.assertTrue(title.contains("Google"),
                 "Title should contain 'Google'");
+
+        googlePage.inputInSearch("test");
+        Thread.sleep(5000);
     }
 }
