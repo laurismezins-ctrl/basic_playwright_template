@@ -1,6 +1,7 @@
 # Environment
 env=test
 base.url=https://www.google.com
+ministryoftesting.url=https://www.ministryoftesting.com/
 
 # Browser
 browser=chromium
