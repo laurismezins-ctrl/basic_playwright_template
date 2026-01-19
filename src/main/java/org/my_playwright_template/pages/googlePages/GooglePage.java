@@ -1,4 +1,4 @@
-package org.my_playwright_template.pages;
+package org.my_playwright_template.pages.googlePages;
 
 import com.microsoft.playwright.Page;
 import org.my_playwright_template.config.Config;
