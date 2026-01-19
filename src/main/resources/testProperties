@@ -1,0 +1,7 @@
+# Environment
+env=test
+base.url=https://www.google.com
+
+# Browser
+browser=chromium
+headless=false
