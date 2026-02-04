@@ -21,7 +21,7 @@ public class GooglePage extends BasePage {
         return page.title();
     }
 
-    public void inputInSearch(String username) {
-        writeText(byXpath(inputTextFieldXpath), username);
+    public void inputInSearch(String searchString) {
+        writeText(byXpath(inputTextFieldXpath), searchString);
     }
 }

@@ -44,5 +44,8 @@ public class Config {
     public static String getBaseUrl() {
         return get("base.url");
     }
+    public static String getBaseUrlMOT() {
+        return get("ministryoftesting.url");
+    }
 
 }
