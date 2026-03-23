@@ -23,7 +23,11 @@ public class MOTLandingPage extends BasePage {
     }
 
     public void pressSearchButton() {
-        click(byCss(searchButtonCss));
+        smartClick(searchButtonCss);
     }
+
+//    public void pressSearchButton() {
+//        click(byCss(searchButtonCss));
+//    }
 
 }

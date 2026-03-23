@@ -2,6 +2,7 @@ package org.my_playwright_template.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import org.my_playwright_template.utils.SmartActions;
 
 public class BasePage {
 
@@ -32,6 +33,14 @@ public class BasePage {
 
     public Locator byText(String text) {
         return page.getByText(text);
+    }
+
+    /*
+    * ai actions
+    */
+
+    public void smartClick(String locatorString) {
+        SmartActions.click(page, locatorString);
     }
 
     /*
