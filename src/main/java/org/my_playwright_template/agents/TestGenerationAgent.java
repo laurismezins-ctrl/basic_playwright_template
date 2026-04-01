@@ -12,14 +12,36 @@ public class TestGenerationAgent {
     public List<String> generateSteps(String scenario) {
 
         String prompt = """
-        Generate Playwright Java test steps for:
-        %s
-
-        Keep steps short and executable.
-        """.formatted(scenario);
+                Generate Playwright test steps.
+                
+                Format STRICTLY as JSON array:
+                [
+                  {"action": "...", "target": "...", "value": "..."}
+                ]
+                
+                Scenario:
+                %s
+                """.formatted(scenario);
 
         String response = client.ask(prompt);
 
         return Arrays.asList(response.split("\n"));
+    }
+
+    public String generateRaw(String scenario) {
+
+        String prompt = """
+        Generate Playwright test steps.
+
+        Format STRICTLY as JSON array:
+        [
+          {"action": "...", "target": "...", "value": "..."}
+        ]
+
+        Scenario:
+        %s
+        """.formatted(scenario);
+
+        return client.ask(prompt);
     }
 }

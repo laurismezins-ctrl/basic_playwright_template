@@ -6,7 +6,7 @@ import org.my_playwright_template.utils.SmartActions;
 
 public class BasePage {
 
-    protected final Page page;
+    public Page page;
 
     public String pageTitleXpath = "//title";
     public String pageTitlesXpath = "//@title";
