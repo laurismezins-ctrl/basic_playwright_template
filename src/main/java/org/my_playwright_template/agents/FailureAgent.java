@@ -2,7 +2,7 @@ package org.my_playwright_template.agents;
 
 public class FailureAgent {
 
-    private final ClaudeClient client = new ClaudeClient();
+    private final GeminiClient client = new GeminiClient();
 
     public String analyze(String error, String context) {
 

@@ -11,6 +11,7 @@ public class MOTBasicTestAIUse extends BaseTest {
 
     @Test
     public void aiGeneratedSteps() {
+//        String scenario = "open the mot page url : %s";
         String scenario = "open the mot page url : %s \n" +
         "input search query :  %s\n" +
         "submit the query search\n" +
